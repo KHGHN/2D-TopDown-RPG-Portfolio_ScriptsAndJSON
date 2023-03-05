@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "item_id": 101,
+      "item_name": "소형 체력포션",
+      "item_description": "체력을 30 채워주는 마법의 물약",
+      "item_type": 0,
+      "max_count": 99,
+      "effect": 30
+    },
+    {
+      "item_id": 104,
+      "item_name": "소형 마력포션",
+      "item_description": "마력을 30 채워주는 마법의 물약",
+      "item_type": 0,
+      "max_count": 99,
+      "effect": 30
+    },
+    {
+      "item_id": 200,
+      "item_name": "소드",
+      "item_description": "기본검",
+      "item_type": 1,
+      "max_count": 1,
+      "effect": 10
+    }
+  ]
+}
