@@ -92,7 +92,9 @@ public class ItemDraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             {
 
                 Image image = eventData.pointerClick.GetComponent<Image>();
-                int index = inventory.inventoryItemList.FindIndex(item => item.itemIcon == image.sprite);
+                InventorySlot _slots = image.gameObject.GetComponentInParent<InventorySlot>();
+
+                int index = inventory.SlotList.FindIndex(slot => slot.gameObject.name == _slots.gameObject.name);
                 Debug.Log(inventory.inventoryItemList[index] + " 아이템이 더블클릭됐습니다.");
 
                 stat = canvas.transform.root.GetComponent<PlayerStat>();

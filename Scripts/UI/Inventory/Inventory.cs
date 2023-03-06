@@ -127,7 +127,7 @@ public class Inventory : MonoBehaviour
     // 슬롯 비우기
     public void CleanItemSlotUI(int index) 
     {
-        Item item = CreateEmptyItem();
+        Item item = CreateEmptyItem(); // 밑에 sprite를 none으로 만들기 위해 빈 아이템을 생성
 
         SlotList[index].Icon.sprite = item.itemIcon;
         SlotList[index].Icon.color = new Color(1, 1, 1, 0);

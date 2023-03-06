@@ -92,7 +92,7 @@ public class InvenSlotDroppableUI : MonoBehaviour, IDropHandler  //IPointerExitH
             }
             //중첩 가능한 경우
             else if ((inventorySlots[preSlotIndex].item_id == inventorySlots[dropSlotIndex].item_id) &&     // 두개가 같은 종류의 아이템이면서 마우스로 드래그한 아이템이 소모품이나 중첩가능 타입이 일때
-                items[preSlotIndex].Item_type == Define.ItemType.Consumables || items[preSlotIndex].Item_type == Define.ItemType.IncreasableCount)
+                (items[preSlotIndex].Item_type == Define.ItemType.Consumables || items[preSlotIndex].Item_type == Define.ItemType.IncreasableCount))
             {
                 int result = inventory.IncreaseItemCount(items[preSlotIndex],dropSlotIndex); // drop에는 pre의 개수를 더 해주고
                 if(result != -1)  // 최대개수 등으로 중첩에 실패하지 않았다면

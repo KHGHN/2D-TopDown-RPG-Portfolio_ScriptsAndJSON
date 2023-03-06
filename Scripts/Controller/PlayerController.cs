@@ -107,6 +107,8 @@ public class PlayerController : BaseController
         hpPotion6.SetItemCount(94);
         hpPotion6.SetItemMaxCount(99);
         hpPotion6.transform.position = new Vector3(-6.0f, -3.0f);
+
+        //stat.Hp -= 150;
     }
 
 

@@ -91,10 +91,12 @@ public class UI_Popup : MonoBehaviour
         if(invenCanvas.gameObject.activeSelf)
         {
             invenCanvas.gameObject.SetActive(false);
+            Managers.Sound.Play("Sounds/Effect/Cyberleaf-ModernUISFX/Buttons/GenericButton14", Define.Sound.Effect);
         }
         else
         {
             invenCanvas.gameObject.SetActive(true);
+            Managers.Sound.Play("Sounds/Effect/Cyberleaf-ModernUISFX/Buttons/GenericButton15", Define.Sound.Effect);
         }
     }
 
@@ -110,7 +112,7 @@ public class UI_Popup : MonoBehaviour
 
         icon.sprite = sprite;
         text.text = _text;
-        Debug.Log("");
+
 
         //UI_Popup uI_Popup = ItemInfoPopup.GetComponentInChildren<UI_Popup>();
 
@@ -125,8 +127,7 @@ public class UI_Popup : MonoBehaviour
 
         icon.sprite = sprite;
         text.text = _text;
-        Debug.Log("");
-
+ 
         //UI_Popup uI_Popup = ItemInfoPopup.GetComponentInChildren<UI_Popup>();
 
         //uI_Popup.gameObject.transform.position = Camera.main.ViewportToScreenPoint(Input.mousePosition);
